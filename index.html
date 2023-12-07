@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+        <div class="container max-w-7xl mx-auto ">
+            <div class="news_hader flex flex-col items-center  mt-10">
+                <div class="news_img ">
+                    <img class="w-80 md:w-auto" src="images/The-Dragon-News.png" alt="">
+                </div>
+                <div class="header_text">
+                    <p class="text-sm  md:text-lg mt-4 md:mt-5">Journalism Without Fear or Favour</p>
+                    <p class="text-lg md:text-xl md:mt-2 mb-4 md:mb-7">Sunday, November 27, 2022</p>
+                </div>
+            </div>
+        </div>
+        <!-- navbar  -->
+        <nav class="bg-gray-800">
+          <div class="mx-auto max-w-7xl ">
+            <div class="relative flex h-16 items-center justify-between">
+              <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
+                  <!--
+                    Icon when menu is closed.
+        
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+                  <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  <!--
+                    Icon when menu is open.
+        
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex flex-shrink-0 md:block hidden items-center  md:items-center">
+                  <img class="md:w-auto w-20  " src="images/Group.png" alt="Your Company">
+                </div>
+                <div class="hidden w-full sm:ml-6 sm:block">
+                  <div class="flex justify-center space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Page</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Categori</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">News</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Post</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Content</a>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-5"> 
+                <a href=""><i class="fa-brands fa-facebook-f fa-lg text-white"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-lg text-white"></i></a>
+                <a href=""><i class="fa-brands fa-youtube fa-lg text-white"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in fa-lg text-white"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-lg text-white"></i></a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Mobile menu, show/hide based on menu state. -->
+          <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Page</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Categori</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">News</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Post</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Content</a>
+            </div>
+          </div>
+        </nav>
+        
+        
+          
+    </header>
+    <!-- hero area  -->
+    <section>
+      <div class="container max-w-7xl mx-auto ">
+        <div class="hero_area md:flex mt-5 md:p-0 p-3 gap-7">
+          <div class="md:w-8/12 my-5">
+            <h2 class="text-2xl md:text-3xl ms-0 md:ms-9 font-semibold ">National News</h2>
+            <div class="border-b-[3px] border-[#15151533] mt-3 relative">
+            <div class=" border-b-[3px] border-[#F00] w-2/6 absolute  top-0"></div>
+            </div>
+            <img class="mt-5 w-full" src="images/Rectangle8.png" alt="">
+            <button type="button" class="bg-[#F00] text-white rounded md:my-7 my-4 py-2 px-4 ">Technology</button>
+            <h1 class="md:text-4xl text-2xl font-semibold md:mb-4 mb-2">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it Again</h1>
+            <p class="text-[#151515B2] text-4 md:mt-4 mt-2">By Awlad Hossain - Mar 18 2023</p>
+            <p class="text-[#151515B2] text-4 md:mt-4 mt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout........</p>
+            <div class="border-b-2 border-[#15151533] md:my-7 my-4"></div>
+            <!-- Hero img card -->
+            <div class="hero-card flex gap-5">
+              <div class="w-6/12">
+                <img class="w-full" src="images/Rectangle9(1).png" alt="">
+                <p class="text-xl mt-4 text-[#151515]">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </p>
+                <p class="text-[#151515B2] text-4 md:mt-4 mt-2">By Awlad Hossain - Mar 18 2023</p>
+                <p class="text-[#151515B2] text-4 md:mt-4 mt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout........</p>
+              </div>
+              <div class="w-6/12">
+                <img class="w-full" src="images/Rectangle10.png" alt="">
+                <p class="text-xl mt-4 text-[#151515]">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </p>
+                <p class="text-[#151515B2] text-4 md:mt-4 mt-2">By Awlad Hossain - Mar 18 2023</p>
+                <p class="text-[#151515B2] text-4 md:mt-4 mt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout........</p>
+              </div>
+            </div>
+            <!-- Hero img card -->
+            <div class="hero-card flex gap-5 mt-5">
+              <div class="w-6/12">
+                <img class="w-full" src="images/Rectangle8.png" alt="">
+                <p class="text-xl mt-4 text-[#151515]">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </p>
+                <p class="text-[#151515B2] text-4 md:mt-4 mt-2">By Awlad Hossain - Mar 18 2023</p>
+                <p class="text-[#151515B2] text-4 md:mt-4 mt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout........</p>
+              </div>
+              <div class="w-6/12">
+                <img class="w-full" src="images/Rectangle9.png" alt="">
+                <p class="text-xl mt-4 text-[#151515]">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </p>
+                <p class="text-[#151515B2] text-4 md:mt-4 mt-2">By Awlad Hossain - Mar 18 2023</p>
+                <p class="text-[#151515B2] text-4 md:mt-4 mt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout........</p>
+              </div>
+            </div>
+          </div>
+          <!-- side bar  -->
+          <div class="md:w-4/12 my-5">
+            <h2 class="text-2xl md:text-3xl ms-0 md:ms-5 font-semibold">Sylhet</h2>
+            <div class="border-b-[3px] border-[#15151533] mt-3 relative">
+            <div class="border-b-[3px] border-[#F00] w-2/6 absolute  top-0"></div>
+            </div>
+            <img class="mt-5 w-full" src="images/Rectangle9.png" alt="">
+            <button type="button" class="bg-[#F00] text-white rounded md:my-5 my-3 py-1 px-3 ">Technology</button>
+            <h3 class="text-xl font-semibold">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </h3>
+            <p class="text-[#151515B2] text-4 md:mt-4 mt-2">By Awlad Hossain - Mar 18 2023</p>
+            <div class="border-b-2 border-[#15151533] md:my-7 my-4"></div>
+            <!-- side bar card  -->
+            <div class="card flex gap-5">
+              <img src="images/Rectangle13.png" alt="">
+              <div class="crd-des">
+                <p class="text-base text-[#151515]">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </p>
+                <p class="text-sm text-[#151515B2]">Mar 18 2023</p>
+              </div>
+            </div>
+            <div class="border-b-2 border-[#15151533] md:my-7 my-4"></div>
+            <!-- side bar card  -->
+            <div class="card flex gap-5">
+              <img src="images/Rectangle13.png" alt="">
+              <div class="crd-des">
+                <p class="text-base text-[#151515]">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </p>
+                <p class="text-sm text-[#151515B2]">Mar 18 2023</p>
+              </div>
+            </div>
+            <div class="border-b-2 border-[#15151533] md:my-7 my-4"></div>
+            <!-- side bar card  -->
+            <div class="card flex gap-5">
+              <img src="images/Rectangle13.png" alt="">
+              <div class="crd-des">
+                <p class="text-base text-[#151515]">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </p>
+                <p class="text-sm text-[#151515B2]">Mar 18 2023</p>
+              </div>
+            </div>
+            <div class="border-b-2 border-[#15151533] md:my-7 my-4"></div>
+            <!-- side bar card  -->
+            <div class="card flex gap-5">
+              <img src="images/Rectangle13.png" alt="">
+              <div class="crd-des">
+                <p class="text-base text-[#151515]">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </p>
+                <p class="text-sm text-[#151515B2]">Mar 18 2023</p>
+              </div>
+            </div>
+            <div class="border-b-2 border-[#15151533] md:my-7 my-4"></div>
+            <!-- side bar card  -->
+            <div class="card flex gap-5">
+              <img src="images/Rectangle13.png" alt="">
+              <div class="crd-des">
+                <p class="text-base text-[#151515]">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </p>
+                <p class="text-sm text-[#151515B2]">Mar 18 2023</p>
+              </div>
+            </div>
+            <img class=" w-auto md:w-full mt-5 text-center" src="images/Rectangle13(1).png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer area   -->
+    <footer class=" bg-[#011321] md:py-28 py-10">
+      <div class="container max-w-7xl mx-auto flex flex-col items-center">
+        <div class="footer-icons md:space-x-7 space-x-5">
+          <a href=""><i class="fa-brands fa-facebook-f fa-xl text-white"></i></a>
+          <a href=""><i class="fa-brands fa-twitter fa-xl text-white"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in fa-xl text-white"></i></a>
+          <a href=""><i class="fa-brands fa-instagram fa-xl text-white"></i></a>
+        </div>
+        <div class="footer-nav text-white space-x-9 my-5">
+          <a href="#">Home</a>
+          <a href="#">Page</a>
+          <a href="#">Categori</a>
+          <a href="#">News</a>
+          <a href="#">Post</a>
+          <a href="#">Content</a>
+        </div>
+        <div class="copy-right">
+          <p class="text-base text-[#FFFFFF66]">@2023 Dragon News. Design by Programming Hero</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
